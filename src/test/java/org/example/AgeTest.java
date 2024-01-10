@@ -3,9 +3,7 @@ package org.example;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
-
-class AgeVerificationTest {
+class AgeTest {
 
 
     @Test
@@ -15,7 +13,7 @@ class AgeVerificationTest {
         boolean expectedResult = false;
 
         // when
-        boolean result = AgeVerification.whetherThePersonIsAdult(age);
+        boolean result = Age.checkIfAdult(age);
 
         // then
         Assertions.assertEquals(expectedResult, result);
@@ -28,7 +26,7 @@ class AgeVerificationTest {
         boolean expectedResult = true;
 
         // when
-        boolean result = AgeVerification.whetherThePersonIsAdult(age);
+        boolean result = Age.checkIfAdult(age);
 
         // then
         Assertions.assertEquals(expectedResult, result);
@@ -41,7 +39,7 @@ class AgeVerificationTest {
         boolean expectedResult = true;
 
         // when
-        boolean result = AgeVerification.whetherThePersonIsAdult(age);
+        boolean result = Age.checkIfAdult(age);
 
         // then
         Assertions.assertEquals(expectedResult, result);
