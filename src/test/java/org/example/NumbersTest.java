@@ -10,10 +10,10 @@ class NumbersTest {
     void whenNumberIsEvenShouldReturnMessageAsExpectedResult() {
         // given
         int number = 8;
-        String expResult = "Given number is even";
+        boolean expResult = true;
 
         // when
-        String result = Numbers.numberVerification(number);
+        boolean result = Numbers.isNumberEven(number);
 
         // then
         Assertions.assertEquals(expResult, result);
@@ -23,10 +23,10 @@ class NumbersTest {
     void whenNumberIsOddShouldReturnMessageAsExpectedResult() {
         // given
         int number = 7;
-        String expResult = "Given number is odd";
+        boolean expResult = false;
 
         // when
-        String result = Numbers.numberVerification(number);
+        boolean result = Numbers.isNumberEven(number);
 
         // then
         Assertions.assertEquals(expResult, result);
@@ -36,10 +36,10 @@ class NumbersTest {
     void whenNumberIsZeroShouldReturnMessageAsExpectedResult() {
         // given
         int number = 0;
-        String expResult = "Zero is an undefined number";
+        boolean expResult = false;
 
         // when
-        String result = Numbers.numberVerification(number);
+        boolean result = Numbers.isNumberEven(number);
 
         // then
         Assertions.assertEquals(expResult, result);
