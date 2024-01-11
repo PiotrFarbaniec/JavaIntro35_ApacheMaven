@@ -3,10 +3,10 @@ package org.example;
 public class Days {
     public static void main(String[] args) {
 
-        System.out.println(checkingWhatDayOfTheWeekIs(7));
+        System.out.println(whatDayOfWeek(7));
     }
 
-    static String checkingWhatDayOfTheWeekIs (int dayNumber) {
+    static String whatDayOfWeek(int dayNumber) {
         String day;
 
         switch (dayNumber) {

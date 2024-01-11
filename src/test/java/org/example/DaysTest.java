@@ -3,8 +3,6 @@ package org.example;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 class DaysTest {
 
     @Test
@@ -14,7 +12,7 @@ class DaysTest {
         String expResult = "Monday";
 
         // when
-        String result = Days.checkingWhatDayOfTheWeekIs(dayNumber);
+        String result = Days.whatDayOfWeek(dayNumber);
 
         //then
         Assertions.assertEquals(expResult, result);
@@ -27,7 +25,7 @@ class DaysTest {
         String expResult = "Tuesday";
 
         // when
-        String result = Days.checkingWhatDayOfTheWeekIs(dayNumber);
+        String result = Days.whatDayOfWeek(dayNumber);
 
         //then
         Assertions.assertEquals(expResult, result);
@@ -40,7 +38,7 @@ class DaysTest {
         String expResult = "Wednesday";
 
         // when
-        String result = Days.checkingWhatDayOfTheWeekIs(dayNumber);
+        String result = Days.whatDayOfWeek(dayNumber);
 
         //then
         Assertions.assertEquals(expResult, result);
@@ -53,7 +51,7 @@ class DaysTest {
         String expResult = "Thursday";
 
         // when
-        String result = Days.checkingWhatDayOfTheWeekIs(dayNumber);
+        String result = Days.whatDayOfWeek(dayNumber);
 
         //then
         Assertions.assertEquals(expResult, result);
@@ -66,7 +64,7 @@ class DaysTest {
         String expResult = "Friday";
 
         // when
-        String result = Days.checkingWhatDayOfTheWeekIs(dayNumber);
+        String result = Days.whatDayOfWeek(dayNumber);
 
         //then
         Assertions.assertEquals(expResult, result);
@@ -79,7 +77,7 @@ class DaysTest {
         String expResult = "Weekend";
 
         // when
-        String result = Days.checkingWhatDayOfTheWeekIs(dayNumber);
+        String result = Days.whatDayOfWeek(dayNumber);
 
         //then
         Assertions.assertEquals(expResult, result);
@@ -92,7 +90,7 @@ class DaysTest {
         String expResult = "Weekend";
 
         // when
-        String result = Days.checkingWhatDayOfTheWeekIs(dayNumber);
+        String result = Days.whatDayOfWeek(dayNumber);
 
         //then
         Assertions.assertEquals(expResult, result);
@@ -107,9 +105,9 @@ class DaysTest {
         String expResult = "There is no such a day!";
 
         // when
-        String result1 = Days.checkingWhatDayOfTheWeekIs(dayNumber1);
-        String result2 = Days.checkingWhatDayOfTheWeekIs(dayNumber2);
-        String result3 = Days.checkingWhatDayOfTheWeekIs(dayNumber3);
+        String result1 = Days.whatDayOfWeek(dayNumber1);
+        String result2 = Days.whatDayOfWeek(dayNumber2);
+        String result3 = Days.whatDayOfWeek(dayNumber3);
 
         //then
         Assertions.assertEquals(expResult, result1);
